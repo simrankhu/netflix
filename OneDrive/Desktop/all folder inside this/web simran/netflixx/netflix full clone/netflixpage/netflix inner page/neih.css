@@ -1,0 +1,427 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    /* border: 1px solid yellow; */
+}
+body{
+    background: black;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 800px;
+ 
+}
+
+.image{
+    /* border: 1px solid green; */
+    display: flex;
+    width: 100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.598) url('neihwall.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+   justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.heading-content{
+    padding: 0px 20px;
+    position: absolute;
+    top: 50%;
+    /* border: 1px solid rgb(194, 188, 188); */
+    color: whitesmoke;
+    width: 500px;
+    left: 10px;
+  
+    
+}
+.heading-content h1{
+    font-size: 3rem;
+    padding: 20px 0px;
+}
+.heading-content h6{
+    font-size: 0.8rem;
+    padding: 30px 0px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+
+    
+}
+.heading-content p{
+    letter-spacing: 5px;
+}
+#listbtn{
+    font-size: 1rem;
+    width: 100px;
+    padding: 10px 0px;
+    border: none;
+    color: whitesmoke;
+    background: rgb(47, 45, 45);
+}
+#listbtn i{
+    padding: 0;
+    margin-right: 3px;
+}
+#playbtn{
+    font-size: 1rem;
+    width: 100px;
+    padding: 10px 0px;
+    border: none;
+    background: whitesmoke;
+
+
+}
+#playbtn i{
+    padding: 0;
+    margin-right: 3px;
+}
+.navbar{
+    /* border: 1px solid blue; */
+    margin: 0;
+    top:0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 15px;
+    background: rgb(0, 0, 0);
+
+}
+.logo{
+    /* border: 1px solid blue; */
+}
+.logo img{
+    width: 50px;
+    height: 55px;
+    padding: 5px;
+}
+.nav-items ul li{
+    display: inline-block;
+     margin: 10px 10px;
+     color: whitesmoke;
+     font-size: 1.3rem;
+}
+.icons i{
+    margin-top:10px;
+    color: whitesmoke;
+    font-size: 1.4rem;
+
+}
+.container-2{
+    /* border: 1px solid red */
+    box-shadow: 10px 30px 10px 20px rgb(237, 231, 231) 10px 30px 10px 20px rgb(234, 227, 227);
+    padding: 10px 6px;
+    color:  whitesmoke;
+    background: black;
+
+}
+.head-2{
+    background: black;
+    padding: 3px 0px;
+    /* border: 1px solid salmon; */
+}
+.head-2 h4{
+    font-size: 1.4rem;
+    margin: 10px 3px;
+    /* border: 1px solid salmon; */
+
+}
+.image-big-container{
+    width: 100%;
+    padding: 20px 2px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.image-big-container::-webkit-scrollbar{
+    overflow-x: hidden;
+}
+.image-big-container img{
+    width:400px;
+    /* padding: 20px 20px; */
+    /* border: 1px solid red; */
+    /* width: fit-content; */
+    margin-left: 10px;
+    height: 300px;
+    border-radius: 5px;
+    transition: 1s ease;
+    transform: 1s ease;
+    cursor: pointer;
+
+    /* border: 1px solid salmon; */
+ 
+}
+.image-big-container img:hover{
+    transform: scale(1.1);
+}
+.image-big-container2{
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    /* border: 1px solid blue; */
+}
+.image-big-container2::-webkit-scrollbar{
+    overflow-x: hidden;
+}
+.image-big-container2 img{
+    width:270px;
+    margin-left: 10px;
+    height: 150px;
+    border-radius: 20px;
+    transition: 1s ease;
+    transform: 1s ease;
+    /* border: 1px solid salmon; */
+  
+}
+.image-big-container2 img:hover{
+    transform: scale(1.1);
+}
+.footer {
+    padding: 10px 20px;
+    background: black;
+    color:gray
+}
+.footer p{
+    font-size: 0.8rem;
+}
+
+@media (max-width:912px) {
+    .container{
+        height: 500px;
+    }
+    .heading-content{
+        top: 15%;
+    }
+    
+}
+
+
+
+
+
+/* ----------------------------------------------media-query-1--------------------------------------------------- */
+@media (max-width:900px) {
+    .container{
+        width: 100%;
+        height:100vh;
+    }
+    .image{
+     
+       background: rgba(0,0,0,0.5)url('neih.jpg');
+       background-size: cover;
+       background-repeat: no-repeat;
+       width: 100%;
+       height: 100vh;
+       
+    }
+    .heading-content{
+          
+        top: 40%;
+        /* border: 1px solid rgb(194, 188, 188); */
+        color: whitesmoke;
+        width: 450px;
+        left: 10px;
+      
+        
+    }
+       
+
+/* ---------------------------2----------- */
+
+   
+    .navbar{
+        /* border: 1px solid blue; */
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-b;
+        padding: 10px 15px;
+        background: rgb(0, 0, 0);
+    
+    }
+   
+    }
+    .logo img{
+        width: 50px;
+        height: 45px;
+        padding: 5px;
+    }
+    .nav-items ul li{
+        display: inline-block;
+         margin: 10px 10px;
+         color: whitesmoke;
+         font-size: 1rem;
+    }
+    .icons i{
+        margin-top:10px;
+        color: whitesmoke;
+        font-size: 1.1rem;
+    
+    }
+    .container-2{
+        padding: 10px 6px;
+        color:  whitesmoke;
+        background: black;
+        
+    
+    }
+    .head-2{
+        background: black;
+        padding: 10px 2px;
+    }
+    .head-2 h4{
+        font-size: 1.5rem;
+    }
+  
+
+    /* ---------------------------media-2------------------------------------------------------- */
+
+
+    @media (max-width:510px) {
+        .container{
+height: 600px;
+        }
+        .image{
+     
+            background: rgba(0,0,0,0.5)url('neih.jpg');
+            background-size: 500px;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 600px;
+            
+         }
+        .navbar ul li{
+            font-size:0.8rem;
+            margin: 10px 3px;
+        }
+        .heading-content{
+          
+            top: 37%;
+            /* border: 1px solid rgb(194, 188, 188); */
+            color: whitesmoke;
+            width: 320px;
+            left: 10px;
+          
+            
+        }
+        .heading-content h1{
+            font-size: 1.9rem;
+            padding: 15px 0px;
+        }
+        .heading-content h6{
+            font-size: 0.7rem;
+            padding: 10px 0px;
+            letter-spacing: 0px;
+        
+            
+        }
+       
+           }
+        
+        
+    /* ----------------------media-3----------------------------------- */
+
+    @media (max-width:310px) {
+        .nav-items{
+            padding: 0;
+            margin: 0;
+        }
+        .navbar{
+            padding: 1px;
+        }
+        .navbar ul li{
+            font-size: 0.5rem;
+            margin: 5px 2px;
+            padding: 0;
+        }
+        
+        .logo img{
+            width: 40px;
+            height: 35px;
+         
+        }
+        .icons i{
+            font-size: 0.7rem;
+        }
+        .heading-content{
+          
+            top: 60%;
+            /* border: 1px solid rgb(194, 188, 188); */
+            color: whitesmoke;
+            width: 250px;
+            left: 10px;
+          
+            
+        }
+        .heading-content h1{
+            font-size: 1.5rem;
+            padding: 15px 0px;
+        }
+        .heading-content h6{
+            font-size: 0.7rem;
+            padding: 10px 0px;
+            letter-spacing: 0px;
+        
+            
+        }
+        .heading-content p{
+            letter-spacing: 5px;
+        }
+           }
+        
+        .head-2{
+            padding: 0;
+        }
+        .head-2 h4{
+            font-size: 1rem;
+            padding: 0;
+        }
+        
+    @media (max-width:290px) {
+        .container{
+            width: 100%;
+            height: 500px;
+        }
+        .image{
+            background-size: 300px;
+        }
+        .heading-content{
+            top: 35%;
+            padding: 0;
+        }
+        .heading-content h1{
+            font-size: 1.3rem;
+        }
+        .heading-content h6{
+            font-weight: 100;
+        }
+        .image-big-container{
+            gap: 3px;
+        }
+        .image-big-container img{
+            height: 170px;
+        }
+        .image-big-container2{
+            gap: 2px;
+        }
+        .image-big-container2 img{
+            height: 100px;
+            width: 150px;
+            padding: 0;
+        }
+    }

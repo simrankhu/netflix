@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <script src="https://kit.fontawesome.com/a02bd9801f.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+    font-family: Arial;
+
+        }
+        body{
+            background: rgba(0, 0, 0, 0.619) url('nn.jpg');
+            background-blend-mode: darken;
+            background-size: cover;
+
+        }
+      .big-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-blend-mode: darken;
+            background-size: cover;
+            width: 100%;
+        }
+        .container{
+            /* border: 1px solid red; */
+            width: 450px;
+            margin-top: 0px;
+            margin-bottom: 50px;
+            padding: 30px 50px;
+            color: white;
+            background: rgba(0, 0, 0, 0.838);
+            background-blend-mode: darken;
+           
+            
+        }
+        .container h1{
+            /* border: 1px solid red; */
+
+            font-size: 2rem;
+           padding: 10px 10px;
+           margin: 10px 10px;
+        }
+        input{
+            width: 93%;
+            padding: 20px 10px;
+            margin: 10px 15px;
+            /* margin-bottom: 30px; */
+            border: none;
+            color: black;
+            /* background: rgba(128, 128, 128, 0.313); */
+            background: whitesmoke;
+            border-radius: 5px;
+        }
+      .btn{
+        
+        width: 93%;
+        padding: 15px 10px;
+            margin: 35px 15px;
+            border: none;
+            background-color: rgb(195, 4, 4);
+            color:white ;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+     
+        #pr{
+            margin-top: 60px;
+            margin-bottom: 10px;
+            /* border: 1px solid blue; */
+            color: gray;
+            font-size: 1rem;
+        }
+        #p{
+            color: gray;
+            font-size: 12px;
+        }
+        #pr a{
+            color:white;
+            margin-left: 3px;
+            font-size: 1rem;
+        }
+        .popup{
+            width: 420px;
+            background: rgb(0, 0, 0);
+            background-blend-mode: darken;
+            border-radius: 6px;
+            position: absolute;
+            top:0;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0.1);
+            text-align: center;
+            padding: 10 30px 30px;
+            color: white;
+            visibility: hidden;
+            transition:transform 0.4s, top 0.4s;
+            height: 80vh;
+            margin-top: 50px;
+        }
+        .secbtn{
+            padding: 10px 30px;
+            background-color: red;
+            color:white ;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 40px;
+            border-radius: 7px;
+
+        }
+        .secbtn a{
+            text-decoration: none;
+            color: white;
+        }
+        .open-popup{
+            visibility: visible;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(1);
+
+        }
+        #pp{
+            margin-top: 10px;
+            padding: 10px;
+          
+        }
+        h2 i{
+            /* color: red; */
+            font-size: 15px;
+        }
+      .footer{
+        /* border: 1px solid green; */
+        background: rgba(0, 0, 0, 0.712);
+        color: gray;
+       
+        padding: 20px 10px;
+      }
+      .footer1{
+        /* border: 1px solid green; */
+        width: 80%;
+        margin: auto;
+        
+      }
+      .footer-head{
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        /* border: 1px solid green; */
+
+      }
+
+      .footer-content{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .footer-content p{
+        /* border: 1px solid yellow; */
+        font-size: 14px;
+        width: 200px;
+        margin: 20px 10px;
+      }
+      #lang-btn1{
+    background: transparent;
+    border: 1px solid whitesmoke;
+    padding: 10px  10px  10px 5px;
+    color: gray;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 20px 10px;
+}
+#lang-btn1 i{
+    margin-right: 4px;
+}
+table td{
+    /* border: 1px solid red; */
+    padding: 10px 10px 0px 2px;
+    width: 50%;
+    color: gray;
+
+}
+.logo{
+    /* border: 1px solid plum; */
+    width: 100%;
+    
+}
+.logo img{
+    width: 200px;
+    display: flex;
+    max-width: 500px;
+    padding: 10px 20px;
+}
+/* --------------------media-query-1---------------------------------- */
+@media (max-width:740px) {
+    body{
+        background: black;
+    }
+.logo{
+    width: 28%;
+}
+.container{
+    width: 100%;
+}
+.container h1{
+    margin: 0px 10px;
+    padding: 10px;
+    font-size: 2.3rem;
+}
+.container input{
+    margin: 10px 10px;
+    width: 100%;
+
+}
+.container button{
+    width: 100%;
+}
+.footer{
+    box-shadow: rgba(47, 46, 46, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(62, 60, 60, 0.12) 0px 4px 6px, rgba(61, 60, 60, 0.17) 0px 12px 13px, rgba(87, 85, 85, 0.436) 0px -3px 5px;
+
+}
+.footer-content p{
+        /* border: 1px solid yellow; */
+        font-size: 14px;
+        width: 140px;
+        margin: 10px 10px;
+        padding: 0;
+      }
+}
+    </style>
+</head>
+<body>
+    <div class="logo"><img src="second.png" alt=""></div>
+    <div class="big-container">
+    <div class="container" id="container">
+        <h1>Sign In</h1>
+        <input type="email" name="name" id="name" placeholder="Email or phone number*">
+        <br>
+        <input type="password" name="password" id="password" placeholder="Password">
+        <br>
+        <button type="submit" class="btn" onclick="openpopup()">Sign In</button>
+        <table  cell-spacing="0" cell-padding="0">
+            <tr>
+                <td><i class="fa fa-check-square" aria-hidden="true"></i> Remember me</td>
+                <td style=" width: 276px; text-align: right;">Need help?</td>
+            </tr>
+        </table>
+        <p id="pr">New to Netflix? <a href="#">Sign up now.</a></p>
+        <p id="p">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="" style="color: blue;">Learn more.</a></p>
+    </div>
+</div>
+
+    <div class="footer">
+        <div class="footer1">
+        <div class="footer-head">
+            <p>Questions? Call 000-800-919-1694</p>
+        </div>
+        <div class="footer-content">
+            <p>FAQ</p>
+            <p>Help Centre</p>
+            <p>Terms of Use</p>
+            <p>Privacy</p>
+            <p>Cookie Preferences</p>
+            <p>Corporate Information</p>
+        </div>
+        <button id="lang-btn1"><i class="fa fa-globe" aria-hidden="true"></i>  English</button>
+        </div>
+    </div>
+
+
+
+    <div class="popup" id="popup">
+        <h2> <i class="bi bi-emoji-heart-eyes"> </i> Thank you</h2>
+        <a href="netflix inner page/index.html">  <button type="submit"class="secbtn"   onclick="closepopup()"><i class="fa fa-check" aria-hidden="true"></i>   OK</button></a>
+        <br>
+        <img src="images/popup.gif" alt="" width="30%">
+        <p id="pp">You have been subscribed sucessfully.Thanks!</p>
+
+    </div>
+    <script>
+        let popup=document.getElementById("popup");
+        function openpopup(){
+            popup.classList.add("open-popup");
+           
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+           
+        }
+        
+    </script>
+</body>
+</html>
