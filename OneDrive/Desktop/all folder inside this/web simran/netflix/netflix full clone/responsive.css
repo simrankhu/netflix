@@ -1,0 +1,333 @@
+/* -----------------media-query-1----------------------------------------------------------------- */
+@media (max-width:1024px) {
+    .container-1{
+        height: auto;
+        padding-bottom: 100px;
+    }
+    .navbar1{
+        justify-content:space-between;
+        width: 100%;
+        
+    }
+    .logo{
+        width: 20%;
+        
+    }
+    .logo img{
+        width: 100%;
+        margin-left:15px;
+    }
+    .btn{
+         margin-right: 10px;
+    }
+
+    .container-item h3{
+        font-size: 2rem;
+    }
+    .container-item p{
+        font-size: 1rem;
+    }
+/* --------section-2----------------------------- */
+
+.container-2-item{
+    width: 100%;
+}
+    .container-2-item h3{
+           margin-top: 30px;
+           font-size: 2rem;
+    }
+    .container-2-item p{
+        font-size: 1rem;
+        line-height: 38px;
+        width:100%;
+      
+        
+    }
+
+
+/* -----section-3-------------------------------------------------------------- */
+.container-3{
+    width: 100%;
+    padding: 20px 0px;
+
+}
+
+.container-3-item h3{
+    margin: 50px  0px 0px 0px;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+
+}
+.container-3-item p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0px;
+    width:100%
+    
+    
+}
+
+
+/* ------section-4------------------------------------------------- */
+
+.container-4-item{
+ 
+    text-align: center;
+}
+.container-4-item h3{
+    font-size: 2rem;
+    width: 100%;
+    padding:0;
+    padding-top: 30px;
+    margin: 0;
+
+}
+.container-4-item p{
+    font-size: 1rem;
+    width: 100%;
+    padding:0;
+    margin: 10px 0px;
+
+
+}
+
+/* ------section-5------------------------------------------------- */
+
+.container-5-item{
+ 
+    text-align: center;
+}
+.container-5-item h3{
+    font-size: 2rem;
+    width: 100%;
+
+}
+.container-5-item p{
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px 30px;
+    margin: 0;
+
+}
+
+/* -----section-6---------------------------------------------- */
+
+.title h3{
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.form-head p{
+    font-size: 1rem;
+    padding-top:50px ;
+
+}
+
+
+/* =---------------foooter---------------------- */
+
+.footer-head p{
+    font-size: 1rem;
+    margin-bottom: 40px;
+
+}
+.footer-content p{
+    font-size: 1rem;
+    width: 160px;
+    padding: 0;
+    margin: 10px 10px;
+    text-decoration: underline;
+}
+}
+
+
+
+
+/* -----------------media-query-2----------------------------------------------------------------- */
+@media (max-width:555px) {
+    .container-item{
+        margin-top: 50px;
+    }
+    .logo{
+        width: 26%;
+   
+        
+    }
+   
+    .container-item h3{
+        font-size: 1.8rem;
+        padding: 0px 20px;
+
+    }
+    .container-item p{
+        font-size: 1rem;
+        padding: 0px 20px;
+
+    }
+    .form-btn button{
+        margin: 10px 20px;
+    }
+/* --------section-2----------------------------- */
+
+    .container-2-item p{
+        padding: 0px 20px;
+    }
+
+
+/* -----section-3-------------------------------------------------------------- */
+
+.container-3-item h3{
+    padding: 0px 20px;
+}
+.container-3-item p{
+    padding: 0px 20px;
+}
+.box-div{
+    width: 260px;
+    height: 70px;
+    padding: 10px;
+    background: black;
+    margin: auto;
+    text-align: center;
+    margin-top: -100px;
+    position: absolute;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+
+}
+#box-2-img{
+    width: 13px;
+    
+}
+
+
+/* ------section-4------------------------------------------------- */
+
+
+.container-4-item h3{
+    padding: 30px 20px;
+   
+}
+.container-4-item p{
+    padding: 0px 20px;
+   
+}
+
+/* ------section-5------------------------------------------------- */
+
+
+.container-5-item h3{
+    padding: 0px 20px;
+
+
+}
+.container-5-item p{
+    padding: 0px 20px;
+
+
+}
+
+/* -----section-6---------------------------------------------- */
+
+.title h3{
+    padding: 0px 20px;
+
+}
+
+.form-head p{
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+
+
+/* =---------------foooter---------------------- */
+
+.footer-head p{
+    font-size: 1rem;
+    margin-bottom: 40px;
+
+}
+.footer-content p{
+    padding: 0;
+    margin: 10px 4px;
+    text-decoration: underline;
+}
+}
+
+
+
+/* -------------media-query-3-------------------------------------------------------------- */
+
+@media(max-width:385px) {
+    
+.logo{
+    width: 29%;
+    
+    
+}
+.container-item{
+  margin-left:0 ;
+  margin-right: 0;
+}
+.form2 button{
+   margin-top: 10px;
+}
+.faq-text li{
+    font-size: 1rem;
+}
+.faq-text li p{
+    margin: 0;
+    padding:10px 0px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    
+ 
+
+}
+
+.input-container input{
+    padding: 15px 2px;
+    width: 200px;
+    font-size: 1.3rem;
+    border:none;
+    border-radius: 3px;
+    margin: 2px 10px;
+}
+.form-btn button{
+    width: 200px;
+    padding: 15px 2px;
+
+}
+
+
+
+
+
+
+
+
+.box-div{
+    width: 200px;
+    height: 70px;
+    padding: 10px;
+    background: black;
+    margin: auto;
+    text-align: center;
+    margin-top: -60px;
+    position: absolute;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+
+}
+}
